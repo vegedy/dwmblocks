@@ -34,7 +34,7 @@ pactl list sinks | awk -v sink="$sink" '
     }
     END {
         if (f) {
-            printf "%s", h ? (m ? ICONhm : ICONhn) : (m ? ICONsm : ICONsn)
+            printf "%s ", h ? (m ? ICONhm : ICONhn) : (m ? ICONsm : ICONsn)
             if (vb)
                 print vb
             else
