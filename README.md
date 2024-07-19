@@ -3,17 +3,21 @@
 Modular status monitor for dwm written in C with features including
 signaling, clickability, cursor hinting and color.
 
+This project is a configured version of dwmblocks from [Ashish Yadav's dwmblocks](https://github.com/ashish-yadav11/dwmblocks).
+
 # Usage
 
 `dwmblocks`
 
 # Configuration
 
-Refer to [config.h](config.def.h). It allows addition/removal of blocks and a
-few other configurations.
+Refer to [config.def.h](config.def.h). It allows addition/removal of blocks and a few other configurations.
 
-> `make`, the first time you run it, or `make config.h` will create config.h by
-> copying [config.def.h](config.def.h).
+After that run
+
+```bash
+./rebuild.sh
+```
 
 > The provided blocks use siji font for icons.
 
@@ -51,22 +55,18 @@ A tiny program to get the current root name. May prove helpful in debugging.
 # Installation
 
 Clone the repository and run
-```
-cd dwmblocks
-make
-sudo make install
+
+```bash
+./rebuild.sh
 ```
 
 # Acknowledgements
 
-Some ideas and code was taken from other projects. Credits for those go to -
+This project is a configured version of dwmblocks from [Ashish Yadav's dwmblocks](https://github.com/ashish-yadav11/dwmblocks).
 
+## More
 * torrinfail ([original dwmblocks implementation](https://github.com/torrinfail/dwmblocks))
 * Daniel Bylinka ([statuscmd patch for dwm](https://dwm.suckless.org/patches/statuscmd/))
 * Jeremy Jay ([statuscolors patch for dwm](https://dwm.suckless.org/patches/statuscolors/))
 
-# See also
 
-* [dsblocks](https://github.com/ashish-yadav11/dsblocks) - A clone of this
-  project with the only difference being that C functions instead of external
-  programs are used to update blocks and handle clicks.
