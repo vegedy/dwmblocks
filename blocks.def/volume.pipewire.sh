@@ -18,8 +18,10 @@ else
         echo "🔊 $volume%"
     elif [ "$volume" -ge 33 ]; then
         echo "🔉 $volume%"
-    else
+    elif [ "$volume" -ge 1 ]; then
         echo "🔈 $volume%"
+    else
+        echo "🔇 $volume%"
     fi
 fi
 
