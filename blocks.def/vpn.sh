@@ -1,10 +1,8 @@
 #!/bin/sh
 
-wg
-
-if [ $? == 1 ] ; then # VPN inactive
-    printf "VPN"
-else # VPN active
-    printf "no VPN"
+if wg >/dev/null 2>&1; then
+    printf " VPN"
+else
+    printf " no VPN"
 fi
 
