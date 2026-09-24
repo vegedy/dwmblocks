@@ -1,2 +1,2 @@
 #!/bin/sh
-printf " %s" "$(date '+%a, %b %d')"
+printf " %s" "$(date '+%b %d')"
